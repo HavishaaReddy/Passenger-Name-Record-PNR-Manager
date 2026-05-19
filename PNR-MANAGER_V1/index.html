@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PNR Manager Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2 class="logo">✈️ PNR MANAGER</h2>
+      <nav>
+        <ul>
+          <li class="active">🏠 Dashboard</li>
+          <li>🔍 Search PNR</li>
+          <li>📅 Bookings</li>
+          <li>📄 SSR Requests</li>
+          <li>🧾 Audit Trail</li>
+          <li>🔔 Notifications</li>
+          <li>🕒 History</li>
+          <li>⬇️ Export Data</li>
+          <li>⚙️ Settings</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="search-bar">
+        <input type="text" placeholder="Search PNR or Passenger...">
+        <div class="profile-icons">
+          <span>🔔</span>
+          <span>👤</span>
+        </div>
+      </header>
+
+      <section class="pnr-overview">
+        <div class="overview-header">
+          <div>
+            <h3>PNR Overview</h3>
+            <p><strong>Passenger Name:</strong> John Doe</p>
+            <p><strong>Booking Date:</strong> 12 May 2025</p>
+            <p><strong>Status:</strong> <span class="status confirmed">Confirmed</span></p>
+          </div>
+          <div class="pnr-code">
+            <p>PNR Code</p>
+            <h2>AB12CD</h2>
+          </div>
+        </div>
+
+        <div class="flight-itinerary">
+          <h4>Flight Itinerary</h4>
+          <table>
+            <thead>
+              <tr>
+                <th>Flight</th><th>From</th><th>To</th><th>Date</th><th>Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>AI101</td><td>DEL</td><td>BOM</td><td>20 May 2025</td><td>08:30</td></tr>
+              <tr><td>AI202</td><td>BOM</td><td>BLR</td><td>20 May 2025</td><td>11:45</td></tr>
+            </tbody>
+          </table>
+        </div>
+ 
+        <div class="info-grid">
+          <div class="info-box">
+            <h4>Passenger Information</h4>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Email:</strong> john.doe@email.com</p>
+            <p><strong>Phone:</strong> +91 9876543210</p>
+            <p><strong>Passenger Type:</strong> Adult</p>
+          </div>
+
+          <div class="info-box">
+            <h4>Seat Allocation</h4>
+            <p><strong>AI101:</strong> 12A</p>
+            <p><strong>AI202:</strong> 14C</p>
+          </div>
+
+          <div class="info-box">
+            <h4>SSR (Special Service Requests)</h4>
+            <p><strong>Meal Preference:</strong> Vegetarian Meal</p>
+            <p><strong>Special Assistance:</strong> Wheelchair</p>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button class="modify">Modify</button>
+          <button class="cancel">Cancel</button>
+          <button class="audit">View Audit Trail</button>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
